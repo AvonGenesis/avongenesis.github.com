@@ -22,7 +22,7 @@
 	width: inherit;
 	height: inherit;
 	border: 1px solid #ccc;
-	background: #6b7077;
+	background: #000000;
 	text-align: center;
 
 	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.9);
@@ -99,5 +99,4 @@
 }
 
 /* -- cosmetics -- */
-.panel .pad {}
 .panel.flip .action {display: none; }
