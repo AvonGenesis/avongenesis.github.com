@@ -99,5 +99,5 @@
 }
 
 /* -- cosmetics -- */
-.panel .pad {padding: 0 15px; }
+.panel .pad {}
 .panel.flip .action {display: none; }
