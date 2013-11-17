@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+	background: url('http://subtlepatterns.com/patterns/tiny_grid.png');
+}
+
+#header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #009FFF;
+}
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	color: #FFFFFF;
+}
+
+.title h1 {
+	font-family: "Raleway";
+	font-weight: bold;
+}
+
+.navigate {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.navigate a {
+	margin-left: 20px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+.navigate a:hover {
+	text-decoration: none;
+}
+
+.active {
+	border-bottom: 2px solid #FFFFFF;
+}

@@ -1,168 +1,28 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]>    
-<html class="no-js lt-ie9" lang="en">
-  <![endif]-->
-  <!--[if gt IE 8]><!--> 
-  <html class="no-js" lang="en">
-    <!--<![endif]-->
-    <head>
-      <meta charset="utf-8" />
-      <!-- Set the viewport width to device width for mobile -->
-      <meta name="viewport" content="width=device-width" />
-      <meta name="keywords" content="Julian, Tith, Rawr, Chat">
-	    <meta name="description" content="Julian's Projects">
-	    <meta name="author" content="Julian Tith">
-      <title>Julian Tith</title>
-      <link href="favicon.ico" rel="icon" type="image/x-icon"/>
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/foundation.css">
-      <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-      <script src="js/vendor/custom.modernizr.js"></script>
-      <style>
-        .top-bar
-        {
-        background-color: #009FFF;
-        }
-        .top-bar.expanded .title-area
-        {
-        background-color: #009FFF;
-        }
-        .top-bar-section .has-dropdown > a:after
-        {
-        border-color: transparent transparent transparent rgba(255, 255, 255, 1);
-        }
-        @media only screen and (min-width: 58.75em)
-        {
-        .top-bar-section .has-dropdown > a:after
-        {
-        border-color: rgba(255, 255, 255, 1) transparent transparent transparent;
-        }
-        }
-        .top-bar-section ul
-        {
-        background-color: #009FFF;
-        }
-        .top-bar.expanded .toggle-topbar a
-        {
-        color: #ffffff;
-        }
-        .top-bar .toggle-topbar.menu-icon a span
-        {
-        -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
-        box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
-        }
-        .top-bar-section li a:not(.button)
-        {
-        background-color: #009FFF;
-        }
-        .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]
-        {
-        border-left: solid 1px white;
-        border-right: solid 1px white;
-        }
-        .top-bar-section ul li.hover > a
-        {
-        background-color: #009FFF;
-        }
-      </style>
-    </head>
-    <body style="background: url(img/background.png) repeat scroll 0% 0% transparent;font-family: 'Noto Sans'">
-      <!-- Navigation -->
-      <nav class="top-bar">
-        <ul class="title-area">
-          <!-- Title Area -->
-          <li class="name">
-            <h1>
-              <a href="index.html">
-              Julian Tith
-              </a>
-            </h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown">
-              <a href="#">Projects</a>
-              <ul class="dropdown">
-                <li><a href="#rawrchat">Rawr Chat</a></li>
-              </ul>
-            </li>
-            <li><a href="https://github.com/AvonGenesis">Github</a></li>
-            <li><a href="mailto:julian@juliantith.com">Contact</a></li>
-          </ul>
-        </section>
-      </nav>
-      <!-- End Top Bar -->
-      <div class="row" style="background-color: #ffffff;">
-        <div class="large-12 columns">
-          <section id="rawrchat">
-            <h1>Rawr Chat <small>Durarara webchat</small></h1>
-            <hr/>
-            <ul data-orbit>
-              <li>
-                <img src="img/rawrchat/chatroom.png" />
-                <div class="orbit-caption">Chatroom screen - New messages are displayed at the top of the chat window</div>
-              </li>
-              <li>
-                <img src="img/rawrchat/lobby.png" />
-                <div class="orbit-caption">Chatroom lobby - Rooms with no users are deleted after 5 minutes</div>
-              </li>
-              <li>
-                <img src="img/rawrchat/settings.png" />
-                <div class="orbit-caption">User settings</div>
-              </li>
-            </ul>
-        	</br>
-            <dl>
-              <dt>Github Source</dt>
-              <dd><a href="https://github.com/AvonGenesis/rawr_chat">https://github.com/AvonGenesis/rawr_chat</a></dd>
-              <dt>Live Demo</dt>
-              <dd><a href="http://www.webchat.avongenesis.tk/">http://www.webchat.avongenesis.tk/</a></dd>
-              <dt>Description</dt>
-              <dd>
-                <p>
-                  Rawr Chat is an webchat built using PHP and MySQL. The design for the chatroom is inspired by <a href="http://en.wikipedia.org/wiki/Durarara!!"><i>Durarara!!</i></a>
-                  I have been working on this since June 2012 as a hobby making updates whenever I can.
-                  I really liked the design of the chatroom from the show and wanted to make it a reality.
-                  There are similar chatrooms out there that have the same design, but I built this webchat with a focus on user customization.
-                  Users are currently able to select a custom color scheme for their chat bubble and avatar background.
-                  Custom avatars is something I would like to add in the future.
-                  I currently do not have the resources to host the chatrooms for people to use daily.
-                </p>
-              </dd>
-            </dl>
-          </section>
-        </div>
+<html>
+  <head>
+    <title>Julian Tith</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="row">
+      <div class="col-md-12 title"><h1>Julian Tith</h1></div>
+      <div class="navigate">
+        <a class="active" href="index.html">Home</a>
+        <a href="https://github.com/AvonGenesis">Github</a>
+        <a href="index.html">HOME</a>
+        <a href="index.html">HOME</a>
       </div>
-      <!-- End Content -->
-      <!-- Footer -->
-      <footer class="row" style="background:url(img/bgfooter.png); background-size: 27px 96px; height: 96px;">
-        <div class="large-12 columns">
-          <hr>
-          <div class="row">
-            <div class="large-12 columns">
-              <p style="text-align: center;">Copyright © 2011-2013 <a href="http://www.juliantith.com/">Julian Tith</a></p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer -->
-      </div>
-      </div>
-      <script>
-        document.write('<script src=js/vendor/' +
-        ('__proto__' in {} ? 'zepto' : 'jquery') +
-        '.js><\/script>')
-      </script>
-      <script src="js/foundation.min.js"></script>
-      <script>
-        $(document).foundation();
-      </script>
-      <!-- End Footer -->
-    </body>
-  </html>
-
+      
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
