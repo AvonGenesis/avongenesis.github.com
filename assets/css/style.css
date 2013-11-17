@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body {
-	background: url('http://subtlepatterns.com/patterns/tiny_grid.png');
+	background: url('../img/tiny_grid.png');
 }
 
 #header {
