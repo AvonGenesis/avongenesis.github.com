@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body {
-	background: url('../img/tiny_grid.png');
+	background-color: white;
+	/*background: url('../img/tiny_grid.png');*/
 }
 
 #header {
@@ -30,7 +31,7 @@ body {
 .navigate a {
 	margin-left: 20px;
 	margin-right: 20px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	color: #FFFFFF;
 	font-size: 14px;
 	letter-spacing: 2px;
@@ -38,8 +39,79 @@ body {
 
 .navigate a:hover {
 	text-decoration: none;
+	border-bottom: 2px solid #FFFFFF;
 }
 
 .active {
 	border-bottom: 2px solid #FFFFFF;
+}
+
+.intro {
+	font-family: "Raleway";
+	font-size: 16px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.stripe {
+	background: none repeat scroll 0% 0% rgb(252, 252, 252);
+}
+
+/* .img {
+	border-radius: 3px;
+	border: 3px solid rgb(255, 255, 255);
+} */
+
+.projects {
+	padding-bottom: 15px;
+}
+
+.projects h1{
+	font-family: "Raleway";
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.stripe {
+	background-color: #F7F7F7;
+	border: 1px solid #DBDBDB;
+	margin-bottom: 20px;
+}
+
+.project-header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: "Raleway";
+}
+
+.project-header a {
+	border-radius: 0px;
+}
+
+.project-header h2 {
+	font-family: "Raleway";
+	font-weight: bold;
+	color: #000000;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	letter-spacing: 4px;
+}
+
+.project-links {
+	text-align: center;
+}
+
+.project-body {
+	font-family: "Raleway";
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+.project-body p {
+	text-align: center;
+}
+
+.project-body img{
+	margin: 5px;
+	width: 48%;
 }
