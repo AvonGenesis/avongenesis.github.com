@@ -6,7 +6,7 @@ body {
 }
 
 #header {
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	background: #009FFF;
 }
@@ -14,13 +14,14 @@ body {
 .title {
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 15px;
+	letter-spacing: 10px;
 	color: #FFFFFF;
 }
 
 .title h1 {
 	font-family: "Raleway";
 	font-weight: bold;
+	font-size: 46px;
 }
 
 .navigate {
@@ -31,19 +32,46 @@ body {
 .navigate a {
 	margin-left: 20px;
 	margin-right: 20px;
-	text-transform: lowercase;
+	text-transform: uppercase;
 	color: #FFFFFF;
-	font-size: 14px;
-	letter-spacing: 2px;
-}
-
-.navigate a:hover {
+	font-size: 18px;
+	letter-spacing: 1px;
 	text-decoration: none;
-	border-bottom: 2px solid #FFFFFF;
 }
 
-.active {
-	border-bottom: 2px solid #FFFFFF;
+.navigate a::before,
+.navigate a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.navigate a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.navigate a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.navigate a:hover::before,
+.navigate a:hover::after,
+.navigate a:focus::before,
+.navigate a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
 .intro {
@@ -64,7 +92,7 @@ body {
 }
 
 .stripe {
-	background-color: #F7F7F7;
+	background-color: #f3f3f3;
 	border-top: 1px solid #DBDBDB;
 	border-bottom: 1px solid #DBDBDB;
 	margin-bottom: 20px;
