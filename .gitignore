@@ -6,3 +6,9 @@ Desktop.ini
 
 # Mac crap
 .DS_Store
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
+
