@@ -1,0 +1,23 @@
+footer.footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+
+.sub-heading {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+.project-image-link {
+  border: none;
+}
+
+.project-image-link:hover {
+  background: none;
+}
+
+.project-image {
+  width: 235px;
+  height: auto;
+}

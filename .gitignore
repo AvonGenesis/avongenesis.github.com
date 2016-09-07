@@ -12,3 +12,5 @@ _site/
 .sass-cache/
 .jekyll-metadata
 
+# NPM Stuff
+node_modules/

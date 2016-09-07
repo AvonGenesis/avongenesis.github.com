@@ -1,0 +1,14 @@
+{
+  "name": "juliantith.com",
+  "version": "1.0.0",
+  "description": "Julian's Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Tith <julian.tith@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "hack": "^0.7.5"
+  }
+}

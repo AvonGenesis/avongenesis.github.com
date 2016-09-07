@@ -1,32 +1,140 @@
----
-layout: default
----
-<div style="width: 100%; flex: 1; position: relative;">
-    <div style="display: flex; flex-direction: column; height: 88%; width: 100%; position: absolute; justify-content: center;">
-        <section class="slider" id="main_slider">
-            {% for post in site.posts %}
-            <div class="slide" data-content="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.permalink }}{% endif %}">
-                <div class="slide__mover">
-                    <div class="zoomer flex-center">
-                        <img class="zoomer__image" src="/images/{{ post.device }}.png" alt="{{ post.device }}" />
-                        <div class="preview">
-                            {% assign app_preview = '/images/' | append: post.name | downcase | append: '/preview.png'  %}
-                            {% if post.app_preview %}
-                                {% assign app_preview = post.app_preview %}
-                            {% endif %}
-                            <img src="{{ app_preview }}" alt="{{ post.name }}" />
-                            <div class="zoomer__area zoomer__area--size-5"></div>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="slide__title">{{ post.name }}<span>{{ post.tagline }}</span></h2>
-            </div>
-            {% endfor %}
-          <nav class="slider__nav">
-            <button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
-            <button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
-            <button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
-          </nav>
-        </section>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Julian Tith</title>
+  <meta name="description" content="Julian's Website">
+  <meta name="author" content="Julian Tith">
+
+  <link rel="stylesheet" href="style/hack.css">
+  <link rel="stylesheet" href="style/standard.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body class="standard">
+  <div class="container">
+    <h1>Julian Tith</h1>
+    <p>
+      Hi, I'm Julian.
+      I'm a student at Cal Poly Pomona, majoring in Computer Science, with plans
+      to graduate with a Bachelor of Science in Computer Science in Winter 2016.
+      I'm a full stack web developer. My framework of choice is Ruby on Rails.
+      On this website you will find a list of projects that I have worked on.
+    </p>
+
+    <h2>Projects</h2>
+
+    <h3>Rawr Chat <span class="sub-heading">PHP webchat</span></h3>
+    <div>
+      <a class="btn btn-primary btn-ghost" href="https://github.com/AvonGenesis/rawr_chat">Source</a>
+      <a class="btn btn-primary btn-ghost" href="http://rawrchat.juliantith.com">Demo</a>
     </div>
-</div>
+    <p>
+      Rawr Chat is a webchat built using PHP and MySQL. The design for the
+      chatroom is inspired by <a href="https://en.wikipedia.org/wiki/Durarara!!">Durarara!!</a> I have been working on this since
+      June 2012 as a hobby making updates whenever I can. I really liked the
+      design of the chatroom from the show and wanted to make it a reality.
+      There are similar chatrooms out there that have the same design, but I
+      built this webchat with a focus on user customization. Users are currently
+      able to select a custom color scheme for their chat bubble and avatar
+      background. Custom avatars is something I would like to add
+      in the future.
+    </p>
+    <div>
+      <a class="project-image-link" href="#" data-featherlight="images/rawr_chat/chatroom.png"><img class="project-image" src="images/rawr_chat/chatroom.png"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/rawr_chat/lobby.png"><img class="project-image" src="images/rawr_chat/lobby.png"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/rawr_chat/settings.png"><img class="project-image" src="images/rawr_chat/settings.png"/></a>
+    </div>
+    <hr>
+
+    <h3>Detour App <span class="sub-heading">Tour planning made easy</span></h3>
+    <div>
+      <a class="btn btn-primary btn-ghost" href="http://devpost.com/software/detour-app">Devpost</a>
+    </div>
+    <p>
+      Band tour planning software. This web application is targeted towards bands
+      that are planning their tour. By telling Detour your start and destination
+      location, it will plan out a route that has the most venues that you can
+      perform at while also taking into account fuel costs and potential
+      revenue gains from playing at certain venues. By utilizing the Eventful
+      API, we are able to gather a list of venues you can play at along your
+      planned route and beautifully display it using the Google Maps API.
+      This project was made using the Laravel 5 framework with a MySQL database.
+      Our team made this project for Hackpoly 2015.
+    </p>
+    <div>
+      <a class="project-image-link" href="#" data-featherlight="images/detourapp/home.jpg"><img class="project-image" src="images/detourapp/home.jpg"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/detourapp/map.jpg"><img class="project-image" src="images/detourapp/map.jpg"/></a>
+    </div>
+    <hr>
+
+    <h3>AlarmUp <span class="sub-heading">Making your alarm smart</a></h3>
+    <div>
+      <a class="btn btn-primary btn-ghost" href="http://devpost.com/software/alarmup">Devpost</a>
+    </div>
+    <p>
+      Smart alarm clock web application. This project was built using the Ruby
+      on Rails framework and is powered by the IBM Watson API. Built for LAHacks
+      2015, our team envisioned this web application of replacing your old dumb
+      alarm clock. Using the IBM Watson API, it would sift through your social
+      networks and pull up the most interesting social news and read it off to
+      you as well as pull any weather/local news.
+    </p>
+    <div>
+      <a class="project-image-link" href="#" data-featherlight="images/alarmup/home.jpg"><img class="project-image" src="images/alarmup/home.jpg"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/alarmup/login.jpg"><img class="project-image" src="images/alarmup/login.jpg"/></a>
+    </div>
+    <hr>
+
+    <h3>KoClass <span class="sub-heading">Communication platform for students and teachers<span></h3>
+    <div>
+      <a class="btn btn-primary btn-ghost" href="http://devpost.com/software/koclass-ruke6q">Devpost</a>
+    </div>
+    <p>
+      Built for HackingEDU 2015, this web application was developed as a
+      platform for students and teachers to communicate about the class in real
+      time. Teachers can add students to classrooms and manage them from there,
+      when class is in sessions, students will have the ability to give live
+      feedback on how the course is being taught and ask any questions
+      they have available. Use cases can be geared towards online-only classes
+      or in person classes. It is built using the Laravel 5 framework powered
+      by the Moxtra API.
+    </p>
+    <hr>
+
+    <h3>Mosaifai <span class="sub-heading">Computer generated mosaic of similar images</span></h3>
+    <div>
+      <a class="btn btn-primary btn-ghost" href="http://devpost.com/software/mosaifai-b284vm">Devpost</a>
+    </div>
+    <p>
+      Made for Hackpoly 2016, Mosaifai is a mosaic generator. By providing a
+      source image, it will find images of objects that are in the source image
+      and create a mosaic of the original image using images that it finds
+      across the internet. Built using PHP for the backend web service,
+      Clarifai for image recognition, and Flickr for pooling images. Backend
+      processing is handled by Sidekiq with ImageMagick for converting image
+      sizes.
+    </p>
+    <div>
+      <a class="project-image-link" href="#" data-featherlight="images/mosaifai/home.jpg"><img class="project-image" src="images/mosaifai/home.jpg"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/mosaifai/orig_1.jpg"><img class="project-image" src="images/mosaifai/orig_1.jpg"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/mosaifai/generated_1.jpg"><img class="project-image" src="images/mosaifai/generated_1.jpg"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/mosaifai/orig_2.jpg"><img class="project-image" src="images/mosaifai/orig_2.jpg"/></a>
+      <a class="project-image-link" href="#" data-featherlight="images/mosaifai/generated_2.jpg"><img class="project-image" src="images/mosaifai/generated_2.jpg"/></a>
+    </div>
+
+    <footer class="footer">
+      Footer stuff goes here. Might not need it.
+    </footer>
+  </div>
+  <script src="//code.jquery.com/jquery-latest.js"></script>
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
